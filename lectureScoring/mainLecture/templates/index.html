@@ -10,6 +10,7 @@
         {{lecture.lecture_scoring}}
         {{lecture.number_of_tests}}
         {{lecture.meeting}}
+        <a href="{% url 'lecture_test' lecture.id %}">페이지로 가기</a>
     {% endfor %}
 
     {% endblock %}
