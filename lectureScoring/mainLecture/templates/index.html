@@ -2,8 +2,11 @@
 
     {% block content %}
 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
     {% for lecture in lecture.all %}
-        <div class="card text-center" style="width: 40rem; margin: 5% 30%;">
+        <div class="card text-center">
             <div class="card-body">
                 <h1 class="card-title">{{lecture.lecture_title}}</h1>
                 <p class="card-text">
