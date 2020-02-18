@@ -25,14 +25,14 @@
 .on {
     display:block;
     height:24px;
-    background: transparent url("star.png") no-repeat;
+    background: transparent url("../images/star.png") no-repeat;
     background-size: 120px 24px;
 }
 .star-rating {
     display:block;
     width: 120px;
     height:24px;
-    background: transparent url("star_off.png") no-repeat;
+    background: transparent url("../images/star_off.png") no-repeat;
     background-size: 120px 24px;
 }
 .lecture_info {
