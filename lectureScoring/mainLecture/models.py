@@ -10,11 +10,17 @@ class Lectures_info(models.Model):
     number_of_tests = models.CharField(max_length=50)
     meeting = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.lecture_title
+
 
 class Professor_info(models.Model):
     professor_name = models.CharField(max_length=50)
     professor_educational_background = models.CharField(max_length=50)
     professor_spec = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.professor_name
 
 
 class Show_lectures_in_comment(models.Model):
@@ -22,3 +28,6 @@ class Show_lectures_in_comment(models.Model):
     professor_name = models.CharField(max_length=50)
     lecture_scoring = models.CharField(max_length=50)
     comment = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.lecture_title
