@@ -1,10 +1,16 @@
 header {
     background-color: rgb(62, 146, 120);
+    margin: 5%;
 }
 
 nav ul li {
     border-left: solid #999 1px;
     font:bold 15px Dotum;
+}
+
+nav {
+    width: 60%; 
+    margin: 5% auto;
 }
 
 nav ul li:first-child {
@@ -17,4 +23,5 @@ nav ul li:first-child {
 
 footer {
     background-color: rgb(116, 186, 160);
+    margin: 5%;
 }
