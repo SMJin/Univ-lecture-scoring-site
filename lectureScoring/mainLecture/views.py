@@ -5,6 +5,5 @@ def index(request):
     return render(request, 'index.html')
 
 def lecture_test(request):
-    lectur_i = Lectures_info.objects.all()
-    context = {'lecture': lectur_i}
-    return render(request, 'show_lecture_test.html', context)
+    lecture_i = Lectures_info.objects
+    return render(request, 'show_lecture_test.html', {'lecture': lecture_i})
