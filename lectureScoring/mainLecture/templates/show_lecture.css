@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+ }
+.lecture_title {
+    border: 1px solid black;
+    padding: 10px 5px 10px 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-width: 500px;
+    max-height: 500px;
+    flex: 1;
+    flex-basis: 50%;
+}
+.lecture_professor {
+    display: flex;
+    border: 1px solid black;
+    max-width: 500px;
+    max-height: 500px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex: 1;
+    flex-basis: 50%;
+}
+.on {
+    display:block;
+    height:24px;
+    background: transparent url("star.png") no-repeat;
+    background-size: 120px 24px;
+}
+.star-rating {
+    display:block;
+    width: 120px;
+    height:24px;
+    background: transparent url("star_off.png") no-repeat;
+    background-size: 120px 24px;
+}
+.lecture_info {
+    border: 1px solid black;
+    max-width: 1000px;
+    max-height: 500px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.comment {
+    border: 1px solid black;
+    max-width: 1000px;
+    max-height: 500px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.lecture_wrapper {
+    display: flex;
+}
+.lecture_evaluation, .wrap-star, .evaluation_button {
+    flex: none;
+}
+.evaluation_button {
+    margin-left: auto;
+}
