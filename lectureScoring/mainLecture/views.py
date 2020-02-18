@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Lectures_info
 
 def index(request):
     return render(request, 'index.html')
