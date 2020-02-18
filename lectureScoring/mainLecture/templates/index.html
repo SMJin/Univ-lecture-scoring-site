@@ -3,14 +3,20 @@
     {% block content %}
 
     {% for lecture in lecture.all %}
-        <h1>{{lecture.lecture_title}} 입니다.</h1> 
-        {{lecture.lecture_professor_name}}
-        {{lecture.university_name}}
-        {{lecture.semester}}
-        {{lecture.lecture_scoring}}
-        {{lecture.number_of_tests}}
-        {{lecture.meeting}}
-        <a href="{% url 'lecture_test' lecture.id %}">페이지로 가기</a>
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{lecture.lecture_title}}</h5>
+                <p class="card-text">
+                    <h3>{{lecture.lecture_professor_name}}</h3>
+                    {{lecture.university_name}}
+                    {{lecture.semester}}
+                    {{lecture.lecture_scoring}}
+                    {{lecture.number_of_tests}}
+                    {{lecture.meeting}}
+                </p>
+                <a href="{% url 'lecture_test' lecture.id %}" class="btn btn-primary">페이지로 가기</a>
+            </div>
+        </div>
     {% endfor %}
 
     {% endblock %}
