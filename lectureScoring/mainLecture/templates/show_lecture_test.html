@@ -6,22 +6,20 @@
     <link rel="stylesheet" href="{% static 'css/show_lecture.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <h1>{{lecture.lecture_title}} 입니다.</h1>
-
 <div class="wrapper">
     <div class="lecture_title">
-        <h2>너의 뇌구조론</h2>
+        <h2>{{lecture.lecture_title}}</h2>
         <p>
             <label>캠퍼스</label>
-            <span>춘천캠퍼스</span>
+            <span>{{lecture.university_name}}</span>
         </p>
         <p>
             <label>교수명</label>
-            <span>아무개교수</span>
+            <span>{{lecture.lecture_professor_name}}</span>
         </p>
         <p>
             <label>개설학기</label>
-            <span>~~~~</span>
+            <span>{{lecture.semester}}</span>
         </p>
     </div>
     <div class="lecture_professor">
