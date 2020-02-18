@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{% static 'css/show_lecture.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ {% for professor in professor.all %}
+        professor
+{% endfor %}
+
 <div class="wrapper">
     <div class="lecture_title">
         <h2>{{lecture.lecture_title}}</h2>
