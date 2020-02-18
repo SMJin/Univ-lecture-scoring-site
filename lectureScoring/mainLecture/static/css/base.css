@@ -1,0 +1,22 @@
+header {
+    background-color: beige;
+}
+
+nav {
+    background-color: blanchedalmond;
+}
+
+nav ul li {
+    display: inline;
+    border-left: solid #999 1px;
+    font:bold 15px Dotum;
+    padding: 0px 10px;
+}
+
+nav ul li:first-child {
+    border-left:none;
+}
+
+footer {
+    background-color: bisque;
+}

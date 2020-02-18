@@ -1,11 +1,11 @@
+
+{% extends 'base.html'%}
 {% load static %}
-<html>
-<head>
-<title>Page Title</title>
+
+    {% block content %}
     <link rel="stylesheet" href="{% static 'css/show_lecture.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+
 
 <div class="wrapper">
     <div class="lecture_title">
@@ -77,5 +77,5 @@
         <p>댓글 내용</span>
     </p>
 </div>
-</body>
-</html> 
+
+{% endblock %}

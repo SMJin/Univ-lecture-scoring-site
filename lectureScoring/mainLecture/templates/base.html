@@ -1,8 +1,19 @@
 <head>
     <title>강의 평가 시스템</title>
-    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
-<header><h1>LOGO</h1></header>
-<nav>메뉴입니다</nav>
-<section>여기는 공간입니다.</section>
-<footer>(주)명진 주식회사</footer>
+<body>
+    <header><h1>LOGO</h1></header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">메인 페이지로 돌아가기</a></li>
+            <li><a href="#">강의 평가 작성</a></li>
+            <li><a href="#">00님의 찜목록</a></li>
+        </ul>
+    </nav>
+    <section>
+        {% block content %}
+        {% endblock %}</section>
+    <footer>(주)명진 주식회사</footer>
+</body>
