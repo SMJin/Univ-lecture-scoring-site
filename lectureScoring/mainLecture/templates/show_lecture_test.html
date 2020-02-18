@@ -6,32 +6,39 @@
     <link rel="stylesheet" href="{% static 'css/show_lecture.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- {% for professor in professor.all %}
-        professor
-{% endfor %}
+ 
 
 <div class="wrapper">
     <div class="lecture_title">
         <h2>{{lecture.lecture_title}}</h2>
-        <p>
-            <label>캠퍼스</label>
+        
+        <div class="empty_box"></div>
+
+        <div>
+            <label>대학교</label>
             <span>{{lecture.university_name}}</span>
-        </p>
-        <p>
+        </div>
+        <!-- <div>
             <label>교수명</label>
             <span>{{lecture.lecture_professor_name}}</span>
-        </p>
-        <p>
+        </div> -->
+        <div>
             <label>개설학기</label>
             <span>{{lecture.semester}}</span>
-        </p>
+        </div>
     </div>
     <div class="lecture_professor">
         <div>
             <img src="https://computer.kangwon.ac.kr/_oxdir/data/page/__magicdir__/image/pro14.gif" alt="Smiley face" height="100" width="100"> 
             <p>
                 <label>교수명</label>
-                <span>하진영</span>
+                <span>
+                    {% for professor in professor.all %}
+                        {% if professor and lecture.lecture_professor_name%}
+                            {{ professor.professor_name }} 
+                        {% endif %}
+                    {% endfor %}
+                </span>
             </p>
         </div> 
         <div style="overflow: auto;">
@@ -52,22 +59,22 @@
             강의평 작성
         </button>    
     </div>
-    <p>
+    <div>
         <label>시험 횟수</label>
         <span>n번</span>
-    </p>
-    <p>
+    </div>
+    <div>
         <label>조모임</label>
         <span>유/무</span>
-    </p>
-    <p>
+    </div>
+    <div>
         <label>과제</label>
         <span>많/보/적</span>
-    </p>
-    <p>
+    </div>
+    <div>
         <label>출결 방법</label>
         <span>호명, 인터넷 등</span>
-    </p>
+    </div>
 </div>
 <div class="comment">
     <div class="wrap-star">

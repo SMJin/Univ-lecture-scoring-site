@@ -25,3 +25,9 @@ footer {
     background-color: rgb(116, 186, 160);
     margin: 5%;
 }
+
+.nav-link {
+    font-weight: 900 ;
+    font-size: 2rem;
+    color:#74BAA0;
+}

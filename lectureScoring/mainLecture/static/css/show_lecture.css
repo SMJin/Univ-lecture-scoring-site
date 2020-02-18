@@ -14,7 +14,7 @@ body {
     justify-content: center;
  }
 .lecture_title {
-    border: 1px solid black;
+    border: 3px solid #B8D8C0;
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;
     border-radius: 15px;
@@ -24,14 +24,16 @@ body {
     flex-basis: 50%;
 }
 .lecture_professor {
+    padding: 10px 5px 10px 5px;
     display: flex;
-    border: 1px solid black;
+    border: 3px solid #B8D8C0;
     max-width: 500px;
     max-height: 500px;
     box-sizing: border-box;
     border-radius: 15px;
     flex: 1;
     flex-basis: 50%;
+    margin-left: 0.25%
 }
 .on {
     display:block;
@@ -47,20 +49,22 @@ body {
     background-size: 120px 24px;
 }
 .lecture_info {
-    border: 1px solid black;
+    padding: 10px 5px 10px 5px;
+    border: 3px solid #B8D8C0;
     max-width: 1000px;
     max-height: 500px;
     border-radius: 15px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 4 auto;
 }
 .comment {
-    border: 1px solid black;
+    padding: 10px 5px 10px 5px;
+    border: 3px solid #B8D8C0;
     max-width: 1000px;
     max-height: 500px;
     border-radius: 15px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 4 auto;
 }
 .lecture_wrapper {
     display: flex;
@@ -108,4 +112,12 @@ button:hover{
     width:100%;
     transition:800ms ease all;
   }
-  
+  label {
+    font-size: 15px;
+  }
+  img {
+    border-radius: 8px;
+  }
+  .empty_box {
+    height: 25px;
+  }
