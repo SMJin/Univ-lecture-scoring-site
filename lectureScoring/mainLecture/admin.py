@@ -1,3 +1,4 @@
 from django.contrib import admin
-
-# Register your models here.
+from mainLecture.models import Lectures_info
+from mainLecture.models import Professor_info
+from mainLecture.models import Show_lectures_in_comment
