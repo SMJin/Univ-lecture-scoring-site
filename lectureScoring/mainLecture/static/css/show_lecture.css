@@ -72,6 +72,9 @@ body {
 .lecture_evaluation, .wrap-star, .evaluation_button {
     flex: none;
 }
+.wrap-star {
+    padding: 4px 4px;
+}
 .evaluation_button {
     margin-left: auto;
 }
@@ -121,3 +124,26 @@ button:hover{
   .empty_box {
     height: 25px;
   }
+  .school {
+    display: flex;
+  }
+  .lecture_text {
+    padding-left: 10px;
+  }
+  .one {
+    flex: 0.1 0 0;
+    width : 34px;
+    height: 20px;
+  }
+  .two {
+    flex: 1 0 0; 
+  }
+ .comment_wrapper {
+    display: flex;
+ }
+ .comment-star {
+    padding-left: 5px;
+ }
+ .comment_people {
+     padding-top: 3px;
+ }

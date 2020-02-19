@@ -40,10 +40,28 @@
                     {% endfor %}
                 </span>
             </p>
-        </div> 
-        <div style="overflow: auto;">
-            <label>학력</label>
-            <span>하진영</span>
+        </div>
+        <div class="lecture_text">
+            <div class="school">
+                <div class="one">학력</div>
+                <span class="two">
+                    {% for professor in professor.all %}
+                        {% if professor and lecture.lecture_professor_name%}
+                            {{ professor.professor_educational_background }} 
+                        {% endif %}
+                    {% endfor %}
+                </span>
+            </div>
+            <div class="school" style="overflow: auto;">
+                <div class="one">경력</div>
+                <span class="two">
+                    {% for professor in professor.all %}
+                        {% if professor and lecture.lecture_professor_name%}
+                            {{ professor.professor_spec }} 
+                        {% endif %}
+                    {% endfor %}
+                </span>
+            </div>
         </div>
     </div>
 </div>
@@ -61,15 +79,15 @@
     </div>
     <div>
         <label>시험 횟수</label>
-        <span>n번</span>
+        <span>{{lecture.number_of_tests}}</span>
     </div>
     <div>
         <label>조모임</label>
-        <span>유/무</span>
+        <span>{{lecture.meeting}}</span>
     </div>
     <div>
         <label>과제</label>
-        <span>많/보/적</span>
+        <span>{{lecture.meeting}}</span>
     </div>
     <div>
         <label>출결 방법</label>
@@ -77,15 +95,15 @@
     </div>
 </div>
 <div class="comment">
-    <div class="wrap-star">
-        <div class='star-rating'>
-            <span class="on" style ="width:30%"></span>
+    <div class="comment_wrapper">
+        <label class="comment_people">아무개</label>
+        <div class="comment-star">
+            <div class='star-rating'>
+                <span class="on" style ="width:{{lecture.lecture_scoring}}%"></span>
+            </div>
         </div>
     </div>
-    <p>
-        <span>아무개</span>
-        <p>댓글 내용</span>
-    </p>
+    <div>댓글 내용</div>
 </div>
 
 {% endblock %}
