@@ -12,3 +12,6 @@ def lecture_test(request, lecture_id):
     # lecture_i = Lectures_info.objects
     context = {'lecture': lecture_more, 'professor': professor_info}
     return render(request, 'show_lecture_test.html', context)
+
+def lecture(request):
+    return render(request, 'show_lecture.html')

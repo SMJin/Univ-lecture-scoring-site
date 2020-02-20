@@ -20,5 +20,6 @@ import mainLecture.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainLecture.views.index, name='index'),
-    path('lecture/<int:lecture_id>', mainLecture.views.lecture_test, name='lecture_test')
+    path('lecture/<int:lecture_id>', mainLecture.views.lecture_test, name='lecture_test'),
+    path('lecture', mainLecture.views.lecture, name='lecture')
 ]

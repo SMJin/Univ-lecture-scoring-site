@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+}
+.one {
+    width: 50%;
+    height: 800px;
+    background-size: 80%;
+    background-image: url("../images/KNU.png");
+    background-repeat: no-repeat;
+}
+.two {
+    width: 50%;
+    height: 800px;
+}
+.lecture_title {
+    width: 98%;
+    height: 10%;
+    background-color: #3E9278;
+    text-align: center; 
+    box-shadow: 0px 0px 5px #000;
+}
+.lecture_title_text {
+    font-size: 400%;
+    color: white;
+    margin-top: 5px;
+}
+.lecture_professor {
+    display: flex;
+    margin-top: 2%;
+    width: 98%;
+    height: 45%;
+}
+.logo {
+    width: 10%;
+}
+.left {
+    width: 25%;
+    height: 100%;
+}
+
+.por_img {
+    box-shadow: 0px 0px 5px #000;
+}
+.right_title {
+    font-size: 400% ;
+}
+button{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    width: 99%;
+    height: 15%;
+    font-size:1em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+button:hover{
+    background:#fff;
+    color:#1AAB8A;
+}
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .professor_info {
+      width: 100%;
+      height: 100%;;
+  }
+  .line {
+    width: 0.5%;
+    height: 90%;
+    margin-top: 2%;
+    border-left: solid black 6px;
+    }
+.right {
+    width: 100%;
+    height: 40%;
+}

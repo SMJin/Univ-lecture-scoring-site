@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <link rel="stylesheet" href="{% static 'css/lecture.css' %}">
+
+
+<div class="wrapper">
+    <div class="one">
+        <img class="logo" src="{% static 'images/KNU_LOGO.png' %}"> 
+    </div>
+
+    <div class="two">
+        <div class="lecture_title">
+            <label class="lecture_title_text">너의 뇌구조론</label>
+        </div>
+        <div class="lecture_professor">
+            <div class="left">
+                <div>
+                    <img class="por_img" style="margin: 8% 18%; width:70%; height:auto;" src="{% static 'images/hajin.jpg' %}"> 
+                </div>
+                <button class="evaluation_button">강의평 작성</button> 
+            </div>
+            <div class="line">
+            </div>
+            <div class="right">
+                <div class="right_title">교수님</div>
+                <div class="right_title">소개</div>
+                <div class="professor_info">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
